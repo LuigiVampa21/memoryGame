@@ -49,20 +49,20 @@ let numberAlreadyFound;
 // on itère jusqu'a ce que chaque chiffre soit apparu au moins une fois;
 // on saura que ce sera le cas car a chaque nouveau numero on le rajoutera dans le trashArray
 while (cleanArray.length < 36) {
-    randomNumber = Math.floor(Math.random() * 36);
-    numberAlreadyFound = trashArray.includes(randomNumber);
+  randomNumber = Math.floor(Math.random() * 36);
+  numberAlreadyFound = trashArray.includes(randomNumber);
   trashArray.push(randomNumber);
   if (!numberAlreadyFound) {
     cleanArray.push(randomNumber);
   } else {
     trashArray.push(randomNumber);
   }
-    i++;
+  i++;
 }
 console.log(trashArray);
 console.log(cleanArray);
 
-// on obtient maintenant un tableau dans lequel chaque card est désignée une fois, on place aleatoirement chacun des chiffres une fois dans 
+// on obtient maintenant un tableau dans lequel chaque card est désignée une fois, on place aleatoirement chacun des chiffres une fois dans
 
 // on commence par diviser ce tabelau en 2
 
@@ -75,12 +75,27 @@ console.log(secondHalf);
 
 // une fois que nous avons les 2 tableau il faut itérer à travers ceux -ci afin de mettre une vealure dans chaque tableau du tableau pairingArray
 
-
-for(let i = 0; i < firstHalf.length; i++){
-    pairingArray[i].push(firstHalf[i]);
+for (let i = 0; i < firstHalf.length; i++) {
+  pairingArray[i].push(firstHalf[i]);
 }
 
 for (let i = 0; i < secondHalf.length; i++) {
-    pairingArray[i].push(secondHalf[i]); 
+  pairingArray[i].push(secondHalf[i]);
 }
 console.log(pairingArray);
+
+// On dispose maintenant d'un grand tableau qui comprend 18 sous-tableaux
+// chacun de ses 18 tableaux comprends 2 valeures entre 0 et 35 qui correspondent aux div contenant les images
+// avec le sass on a créer 18classes chacune contenant une image de fruits différrentes.
+// Maintenant il nous faut ajouter a chacune des 2 div de chaque sous-tableau une classe différente de 1 a 18
+
+// On itère sur le tableau principale
+
+for (let i = 0; i < pairingArray.length; i++) {
+  console.log(pairingArray[i][0], pairingArray[i][1]);
+  console.log(i + 1);
+  console.log(document.querySelector(`[index="${pairingArray[i][0]}"]`));
+  console.log(document.querySelector(`[index="${pairingArray[i][1]}"]`));
+  document.querySelector(`[index="${pairingArray[i][0]}"]`).classList.add(`fruit-${i+1}`);
+  document.querySelector(`[index="${pairingArray[i][1]}"]`).classList.add(`fruit-${i+1}`);
+}
