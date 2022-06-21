@@ -1,0 +1,36 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  background: #333;
+  width: 100vw;
+  height: 100vh;
+}
+
+.cards {
+  width: 80vw;
+  height: 90vh;
+  border: 1px solid #333;
+  margin: 5vh auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 5vh;
+}
+
+.card {
+  /* background-color: #d2af82;
+    background-image: url(img/question.png);
+    /* background-size: contain;  */
+  background-image: url(img/cartes.png);
+  background-size: 8vw, 16vh;
+  background-position: 0% 0%;
+}
+
+/*# sourceMappingURL=style.css.map */
