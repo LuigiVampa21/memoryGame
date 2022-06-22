@@ -16,8 +16,9 @@ html {
 @for $i from 1 through 18 {
   .fruit-#{$i} {
     background-image: url(img/cartes.png);
+    background-image: url(img/cartes.png);
     background-size: 8vw, 16vh;
-    background-position: 0% ($i * 102px);
+    background-position: 0% ($i * 97px);
   }
 }
 
@@ -32,11 +33,29 @@ html {
   padding-top: 5vh;
 }
 
-.card {
-  /*  background-color: #d2af82;
-    background-image: url(img/question.png);
-    background-size: contain;  */
-  // background-image: url(img/cartes.png);
-  // background-size: 8vw, 16vh;
-  // background-position: 0% 0%;
+.subcard{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  background-color: #d2af82;
+}
+
+.frontFace {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #d2af82;
+  background-image: url(img/question.png);
+  background-size: 8vw, 16vh;
+  backface-visibility: hidden;
+}
+
+.backFace {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
 }
