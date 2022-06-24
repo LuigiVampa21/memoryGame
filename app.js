@@ -70,8 +70,6 @@ let pairingArray = [
   [],
 ];
 
-// let cards = ["fraise", "cerise", "cerise", "fraise"];
-
 let cleanArray = [];
 let trashArray = [];
 let i = 0;
@@ -136,19 +134,20 @@ for (let i = 0; i < pairingArray.length; i++) {
     .classList.add(`fruit-${i + 1}`);
 }
 
-// On ajoute la classe notFlipped par dessus que l'on enlevera a chaque clic sur le e.target
-
-// const div = document.querySelectorAll('div');
-
-// div.forEach((i)=>{
-// i.classList.add('notFlipped');
-
-// });
-
 // chacun des tableaux correspond maintenant a une classe = fruit-(number) allant de 1 a 36
 // lorsqu'un élément est cliqué il faut lui retirer la class card et ajouter la class fruit-number;
 
 // il faut créer un event lorsque l'utilisateur clique sur une carte
+
+// A present lorsque le joueur clique sur une case elle se retourne.
+// Elle reste dans sa position tant que le joueur n'a pas tiré une autre carte.
+// Lorsqu'il tire une nouvelle carte on fait une condition :
+// Si il s'agit du même fruit, les carte reste dans cette position
+// Sinon elles se retournent.
+
+var isFlipped = false;
+
+let firstTry;
 
 section.addEventListener('click', (e) => {
   console.log(e.target);
@@ -157,13 +156,33 @@ section.addEventListener('click', (e) => {
   document.querySelector(
     `[subindex="${Number(e.target.attributes.frontIndex.value)}`
   ).style.transform = 'rotateY(180deg)';
+  isFlipped = true;
   // On recupére la valeure de l'index de l'élement sur lequel on a cliqué.
   // console.log(Number(e.target.attributes.frontIndex));
   console.log(Number(e.target.attributes.frontIndex.value));
+  firstTry = Number(e.target.attributes.frontIndex.value);
+  console.log(firstTry);
+  // lorsqu'une card est retournée on changera la variable isFlipped par true.
+  // il faut maintenant itérer dans le tableau jusqua retrouver la paire du numero de la carte retournée.
 });
 
-// A present lorsque le joueur clique sur une case elle se retourne.
-// Elle reste dans sa position tant que le joueur n'a pas tiré une autre carte.
-// Lorsqu'il tire une nouvelle carte on fait une condition :
-// Si il s'agit du même fruit, les carte reste dans cette position
-// Sinon elles se retournent.
+// console.log(firstTry);
+var cerise = 3;
+console.log(cerise);
+console.log(pairingArray.length);
+for (i = 0; i < pairingArray.length; i++) {
+  for (j = 0; j < pairingArray[i].length; j++) {
+    if (pairingArray[i][j] === cerise) {
+      console.log(pairingArray[i]);
+      for (let x = 0; x < pairingArray[i].length; x++) {
+        if(pairingArray[i][x] != cerise){
+          console.log(pairingArray[i][x]);
+        }
+      }
+    }
+  }
+}
+
+// On posséde maintenant l'autre numéro de la carte qui a été choisie par le joueur 
+// si la carte que le joueur 
+

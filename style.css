@@ -11,132 +11,133 @@ html {
   background: #333;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 .fruit-1 {
   background-image: url(img/cartes.png);
   background-image: url(img/cartes.png);
   background-size: 8vw, 16vh;
-  background-position: 0% 97px;
+  background-position: 0% 5.9%;
 }
 
 .fruit-2 {
   background-image: url(img/cartes.png);
   background-image: url(img/cartes.png);
   background-size: 8vw, 16vh;
-  background-position: 0% 194px;
+  background-position: 0% 11.8%;
 }
 
 .fruit-3 {
   background-image: url(img/cartes.png);
   background-image: url(img/cartes.png);
   background-size: 8vw, 16vh;
-  background-position: 0% 291px;
+  background-position: 0% 17.7%;
 }
 
 .fruit-4 {
   background-image: url(img/cartes.png);
   background-image: url(img/cartes.png);
   background-size: 8vw, 16vh;
-  background-position: 0% 388px;
+  background-position: 0% 23.6%;
 }
 
 .fruit-5 {
   background-image: url(img/cartes.png);
   background-image: url(img/cartes.png);
   background-size: 8vw, 16vh;
-  background-position: 0% 485px;
+  background-position: 0% 29.5%;
 }
 
 .fruit-6 {
   background-image: url(img/cartes.png);
   background-image: url(img/cartes.png);
   background-size: 8vw, 16vh;
-  background-position: 0% 582px;
+  background-position: 0% 35.4%;
 }
 
 .fruit-7 {
   background-image: url(img/cartes.png);
   background-image: url(img/cartes.png);
   background-size: 8vw, 16vh;
-  background-position: 0% 679px;
+  background-position: 0% 41.3%;
 }
 
 .fruit-8 {
   background-image: url(img/cartes.png);
   background-image: url(img/cartes.png);
   background-size: 8vw, 16vh;
-  background-position: 0% 776px;
+  background-position: 0% 47.2%;
 }
 
 .fruit-9 {
   background-image: url(img/cartes.png);
   background-image: url(img/cartes.png);
   background-size: 8vw, 16vh;
-  background-position: 0% 873px;
+  background-position: 0% 53.1%;
 }
 
 .fruit-10 {
   background-image: url(img/cartes.png);
   background-image: url(img/cartes.png);
   background-size: 8vw, 16vh;
-  background-position: 0% 970px;
+  background-position: 0% 59%;
 }
 
 .fruit-11 {
   background-image: url(img/cartes.png);
   background-image: url(img/cartes.png);
   background-size: 8vw, 16vh;
-  background-position: 0% 1067px;
+  background-position: 0% 64.9%;
 }
 
 .fruit-12 {
   background-image: url(img/cartes.png);
   background-image: url(img/cartes.png);
   background-size: 8vw, 16vh;
-  background-position: 0% 1164px;
+  background-position: 0% 70.8%;
 }
 
 .fruit-13 {
   background-image: url(img/cartes.png);
   background-image: url(img/cartes.png);
   background-size: 8vw, 16vh;
-  background-position: 0% 1261px;
+  background-position: 0% 76.7%;
 }
 
 .fruit-14 {
   background-image: url(img/cartes.png);
   background-image: url(img/cartes.png);
   background-size: 8vw, 16vh;
-  background-position: 0% 1358px;
+  background-position: 0% 82.6%;
 }
 
 .fruit-15 {
   background-image: url(img/cartes.png);
   background-image: url(img/cartes.png);
   background-size: 8vw, 16vh;
-  background-position: 0% 1455px;
+  background-position: 0% 88.5%;
 }
 
 .fruit-16 {
   background-image: url(img/cartes.png);
   background-image: url(img/cartes.png);
   background-size: 8vw, 16vh;
-  background-position: 0% 1552px;
+  background-position: 0% 94.4%;
 }
 
 .fruit-17 {
   background-image: url(img/cartes.png);
   background-image: url(img/cartes.png);
   background-size: 8vw, 16vh;
-  background-position: 0% 1649px;
+  background-position: 0% 100.3%;
 }
 
 .fruit-18 {
   background-image: url(img/cartes.png);
   background-image: url(img/cartes.png);
   background-size: 8vw, 16vh;
-  background-position: 0% 1746px;
+  background-position: 0% 106.2%;
 }
 
 .cards {
