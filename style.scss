@@ -60,3 +60,12 @@ html {
   backface-visibility: hidden;
   transform: rotateY(180deg);
 }
+
+.subcard.show div.frontFace {
+  transform: rotateY(0deg);
+  // display: none;
+}
+
+.subcard.show div.backFace {
+  transform: translateY(100%);
+}
